@@ -8,7 +8,6 @@ app.use(express.json());
 app.use(cors({
   origin: '*'
 }));
-app.use(express.static(path.resolve(__dirname, '../Weather-Front-End/client/build')));
 
 require("dotenv").config();
 
