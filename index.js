@@ -40,6 +40,10 @@ app.post("/current", function(req, res){
 
 });
 
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+
 // Making API endpoints
 app.post("/forecast", function(req, res){
   
