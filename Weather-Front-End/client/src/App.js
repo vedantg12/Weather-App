@@ -17,8 +17,8 @@ function App() {
       body: JSON.stringify({ lat: `${lat}` , lon: `${lon}`})
     };
 
-    const currentWeatherFetch = fetch("http://localhost:3001/current", requestOptions);
-    const forecastFetch = fetch("http://localhost:3001/forecast", requestOptions);
+    const currentWeatherFetch = fetch("https://weather-app-backend-chi.vercel.app/current", requestOptions);
+    const forecastFetch = fetch("https://weather-app-backend-chi.vercel.app/forecast", requestOptions);
 
     Promise.all([currentWeatherFetch, forecastFetch])
       .then(async (response) => {
